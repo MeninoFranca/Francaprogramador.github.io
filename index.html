@@ -1,52 +1,196 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programador - França</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <style>
-        .teto {
-            width: 100%;
-            height: 100px;
-            background-color: white;
-            overflow: hidden;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        .laje {
-            display: flex;
-            justify-content: center; /* Centraliza horizontalmente */
-            align-items: center; /* Centraliza verticalmente */
-            height: 100%; /* Altura total da div teto */
-            overflow: hidden;
-        }
-        .laje > p {
-            margin: 0 10px; /* Espaçamento horizontal entre os itens */
-            color: rgb(136, 136, 136);
-        }
-        .laje > p:hover {
-            color: rgb(0, 0, 0);
-        }
-        body {
-            padding: 0px;
-            margin: 0px;
-            background-color: rgb(255, 255, 255);
-        }
-    </style>
+    <title>França Programador</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="Img2/franca.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slide.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
+
+
 </head>
+
 <body>
-    <div class="teto">
-        <div class="laje">
-            <p>INICIO</p>
-            <p><a style="text-decoration: none; color: rgb(136, 136, 136);" href="sobre.html">SOBRE</a></p>
-            <p>SERVIÇOS</p>
-            <p>PORTFÓLIO</p>
-            <p>BLOG DE MATÉRIAS</p>
-            <p>CONTATO</p>
+    <!-- Cabeçalo -->
+    <header>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="padding: 10px;">
+            <div class="navbar-brand">França Programador</div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="mynav" class="collapse navbar-collapse justify-content-end text-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">INICIO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre.html">SOBRE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">CONTATO</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Cabeçalo -->
+
+    <!--  -->
+    <div class="naovaza">
+        <section class="slider">
+            <div class="slider-content">
+
+                <input type="radio" name="btn-radio" id="radio1">
+                <input type="radio" name="btn-radio" id="radio2">
+                <input type="radio" name="btn-radio" id="radio3">
+                <input type="radio" name="btn-radio" id="radio4">
+
+                <div class="slide-box primeiro">
+                    <video src="/videos/slide1.mp4" class="img-desktop" autoplay loop muted repeat></video>
+                    <video src="/videos/slide1.mp4" class="img-mobile" autoplay loop muted repeat></video>
+                </div>
+
+                <div class="slide-box">
+                    <video src="/videos/slide2.mp4" class="img-desktop" autoplay loop muted repeat></video>
+                    <video src="/videos/slide2.mp4" class="img-mobile" autoplay loop muted repeat></video>
+                </div>
+
+                <div class="slide-box">
+                    <video src="/videos/slide3.mp4" class="img-desktop" autoplay loop muted repeat></video>
+                    <video src="/videos/slide3.mp4" class="img-mobile" autoplay loop muted repeat></video>
+                </div>
+
+                <div class="slide-box">
+                    <video src="/videos/slide4.mp4" class="img-desktop" autoplay loop muted repeat></video>
+                    <video src="/videos/slide4.mp4" class="img-mobile" autoplay loop muted repeat></video>
+                </div>
+
+                <div class="nav-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+
+                <div class="nav-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="features">
+            <div class="headline">O que faço</div>
+            <div id="features-container">
+                <div class="feature">
+                    <i class="fas fa-tachometer-alt fa-3x"></i>
+                    <span class="feature-title">Criação de sites personalizados</span>
+                    <p>Desenvolvimento de sites personalizados de acordo com seu modelo de negócio. Sites
+                        institucionais, lojas virtuais, landingpages e hotsite.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-code fa-3x"></i>
+                    <span class="feature-title">Criação de lojas virtuais</span>
+                    <p>Criação de Lojas Virtuais personalizadas, com checkout de pagamento, integração com correios e
+                        cadastro ilimitado de produtos.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-layer-group fa-3x"></i>
+                    <span class="feature-title">Desenvolvimento de sistema</span>
+                    <p>Criação, analíse, manutenção e Atualização de softwares para atender à necessidade da sua
+                        empresa.</p>
+                </div>
+                <div class="feature" style="margin-top: 20px;">
+                    <i class="fa-sharp fa-solid fa-square-poll-vertical fa-3x"></i>
+                    <span class="feature-title">Banco de dados</span>
+                    <p>Criação, analíse, manutenção e Atualização de databasse para atender à necessidade da sua
+                        empresa.</p>
+                </div>
+                <div class="feature" style="margin-top: 20px;">
+                    <i class="fa-sharp fa-solid fa-user-plus fa-3x"></i>
+                    <span class="feature-title">Gestão de trafégo</span>
+                    <p>A melhor estratégia para atrair pessoas para sua rede social, loja virtual ou site.</p>
+                </div>
+                <div class="feature" style="margin-top: 20px;">
+                    <i class="fa-solid fa-tower-cell fa-3x"></i>
+                    <span class="feature-title">Suporte</span>
+                    <p>Um suporte eficiente é a chave para um bom 
+                        negócio.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="product">
+            <div class="headline">Vantagens Únicas de Parceria</div>
+            <div id="product-container">
+                <img width="600px" style="margin-right: -10px;" src="/Img2/celular.png" alt="">
+                <div id="items">
+                    <div class="item">
+                        <i class="fas fa-map-marked fa-2x color-primary"></i>
+                        <p class="espacoprodutos">Flexibilidade e Escalabilidade.</p>
+                    </div>
+                    <div class="item">
+                        <i class="fas fa-users fa-2x color-primary"></i>
+                        <p class="espacoprodutos">Criatividade.</p>
+                    </div>
+                    <div class="item">
+                        <i class="fas fa-glass-cheers fa-2x color-primary"></i>
+                        <p class="espacoprodutos">Suporte Proativo.</p>
+                    </div>
+                    <div class="item">
+                        <i class="fas fa-book-open fa-2x color-primary"></i>
+                        <p class="espacoprodutos">Compromisso com a Comunicação e Transparência.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="testimonials">
+            <div class="headline">Feedbacks</div>
+            <div id="testimonials-container">
+                <div class="testimonial">
+                    <img src="Img2/nainane.jfif" alt="" class="testimonial-image">
+                    <p>Serviço de Gestão de trafégo @naaisouzanails arrasou</p>
+                </div>
+                <div class="testimonial">
+                    <img src="Img2/studiog.jpg" alt="" class="testimonial-image">
+                    <p>Melhor serviço de Gestão de trafégo @espacodebelezastudiog</p>
+                </div>
+            </div>
         </div>
+
+        <section id="gallery">
+            <div class="headline">portfólio</div>
+            <div id="gallery-container">
+                <img src="Img2/" alt="" class="gallery-image">
+                <img src="Img2/" alt="" class="gallery-image">
+                <img src="Img2/" alt="" class="gallery-image">
+                <img src="Img2/" alt="" class="gallery-image">
+                <img src="Img2/" alt="" class="gallery-image">
+                <img src="Img2/" alt="" class="gallery-image">
+            </div>
+        </section>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <footer id="footer">
+        <p>copyright 2024 - todos os direitos reservados.</p>
+        <p>Feito por França</p>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f424490d38.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="js/slide.js"></script>
 </body>
 </html>
