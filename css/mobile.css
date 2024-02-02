@@ -145,3 +145,12 @@
     height: 630px;
     margin: 0;
  }
+
+ .pgbr-carrousel-item {
+    width: auto;
+    height: 200px;
+}
+
+.pgbr-carrousel-item video{
+    width: 100%;
+}

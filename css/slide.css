@@ -83,21 +83,7 @@ section.slider{
 }
 
 @media screen and (max-width: 900px) {
-    .img-desktop{
-        display: none;
-    }
-
-    .img-mobile{
-        display: block;
-        width: 100%;
-    }
-
-    .nav-auto, .nav-manual{
-        margin-top: 50%;
-    }
-    .slider-content{
-        height: 40%;
-    }
+   
 }
 
 @media screen and (max-width: 1500px) {
